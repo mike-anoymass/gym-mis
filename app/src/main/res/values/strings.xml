@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">POLY_GYM MIS</string>
+    <string name="first_name">Enter your First Name</string>
+    <string name="save_btn">save</string>
+    <string name="last_name">Enter Last Name</string>
+    <string name="email">Enter Email Addresses</string>
+    <string name="login_btn">Log In</string>
+    <string name="password">Enter Your Password</string>
+    <string name="login_text_view">LOG IN TO POLY GYM</string>
+    <string name="emailField">Enter Email Address(es)</string>
+    <string name="send_btn">Send Email</string>
+    <string name="subject">Enter Subject</string>
+    <string name="message">Compose Email</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="details">Details</string>
+    <string name="delete">Delete</string>
+    <string name="exit_activity">Exit Activity</string>
+    <string name="edit">Edit</string>
+
+    <string name="nav_drawer_open">Open Navigation</string>
+    <string name="nav_drawer_close">Close Navigation</string>
+    <string name="openDrawer">openDrawer</string>
+    <string name="closeDrawer">closeDrawer</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_member">Members</string>
+    <string name="nav_trainer">Trainers</string>
+    <string name="nav_finances">Finance</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about">About US</string>
+    <string name="help">Help</string>
+
+
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Members</item>
+        <item>Trainers</item>
+        <item>Finances</item>
+        <item>Settings</item>
+        <item>About US</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Main Items"
+        app:showAsAction="ifRoom|withText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/home_64"
+                    android:title="@string/nav_home" />
+
+                <item
+                    android:id="@+id/members"
+                    android:icon="@drawable/member_64"
+                    android:title="@string/nav_member" />
+
+                <item
+                    android:id="@+id/trainers"
+                    android:icon="@drawable/trainer_64"
+                    android:title="@string/nav_trainer" />
+
+                <item
+                    android:id="@+id/finance"
+                    android:icon="@drawable/dollar_64"
+                    android:title="@string/nav_finances" />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Other"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/help"
+                    android:icon="@drawable/help_64"
+                    android:title="@string/help" />
+
+                <item
+                    android:id="@+id/aboutUs"
+                    android:icon="@drawable/about_64"
+                    android:title="@string/nav_about" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

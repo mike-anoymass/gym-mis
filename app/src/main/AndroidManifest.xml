@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp">
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="Poly Gym"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Holo.Light">
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/custom" />
+
+        <activity
+            android:name=".Home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.MAINACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.MENU" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".NotificationTuts">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.Noti" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".About"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Preference"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.PREFERENCE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Members"
+            android:theme="@android:style/Theme.Holo.Light">
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.MEMBERS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddMember" />
+
+        <activity android:name=".Email" />
+
+        <activity
+            android:name=".Camera"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OpenedClass"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GFX"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Sound"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Tabs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebViewBrowser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Protect_My_Application"
+            android:label="Protect My Application" />
+        <activity
+            android:name=".Set_Password"
+            android:label="Set Password"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity
+            android:name=".Edit_Password"
+            android:label="Edit Password"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity
+            android:name=".DatePickerSettings"
+            android:label="Select Date"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+        <activity
+            android:name=".Log_in"
+            android:label="**LOG IN**"
+            android:theme="@android:style/Theme.Holo.Dialog" />
+
+
+        <activity
+            android:name=".ExternalData"
+            android:label="External Data" />
+
+        <activity
+            android:name=".ContactsList"
+            android:label="Contacts" />
+
+        <activity
+            android:name=".NotiView"
+            android:label="welcome!" />
+
+        <activity
+            android:name=".ViewMem"
+            android:label="Members!" />
+
+        <activity
+            android:name=".MemberDetails"
+            android:label="Member Details"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name=".RemoveMember"
+            android:label="Deleting Member" />
+
+        <activity
+            android:name=".SendMessage"
+            android:label="Send SMS"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <activity
+            android:name=".EditMember"
+            android:label="Edit Member" />
+    </application>
+
+</manifest>

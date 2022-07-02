@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Understanding what the will of the Lord is Eph.5:17
+                        Submit yourselves therefore to God. Resist the devil James.4:7
+                        And now abideth faith, hope, charity, these three 1Cor.13:13
+                        I am Alpha and Omega, the beginning and the ending, saith the Lord Rev.1:8" />
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <EditText
+            android:id="@+id/urlText"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="30"
+            android:hint="Enter Url Here" />
+
+        <Button
+            android:id="@+id/goBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="70"
+            android:onClick="goBtnClicked"
+            android:text="Go" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/webViewBrowser"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <SlidingDrawer
+            android:id="@+id/slidingDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:content="@+id/content"
+            android:handle="@+id/handle">
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slide" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/goBackBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:onClick="backBtnClicked"
+                    android:text="Go back a page" />
+
+                <Button
+                    android:id="@+id/goForwardBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:onClick="forwardBtnClicked"
+                    android:text="Go forward a page" />
+
+                <Button
+                    android:id="@+id/refreshBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:onClick="refreshBtnClicked"
+                    android:text="Refresh Page" />
+
+                <Button
+                    android:id="@+id/clearBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:onClick="clearBtnClicked"
+                    android:text="Clear History" />
+
+
+            </LinearLayout>
+
+        </SlidingDrawer>
+
+
+    </FrameLayout>
+</LinearLayout>
